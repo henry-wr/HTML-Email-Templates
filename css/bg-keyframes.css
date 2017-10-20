@@ -1,0 +1,12 @@
+        @-webkit-keyframes sliding-bg {
+            to {background-position: -600px 48px, 940px 148px;}
+        }
+        
+        @-webkit-keyframes sliding-step {
+            16.67% {background-position: -100px 48px, 450px 148px;}
+            33.33% {background-position: -200px 48px, 550px 148px;}
+            50% {background-position: -300px 48px, 650px 148px;}
+            66.67% {background-position: -400px 48px, 750px 148px;}
+            83.33% {background-position: -500px 48px, 850px 148px;}
+            100% {background-position: -600px 48px, 950px 148px;}
+        }

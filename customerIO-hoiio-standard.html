@@ -1,0 +1,220 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- So that mobile webkit will display zoomed in -->
+  <meta name="format-detection" content="telephone=no"> <!-- disable auto telephone linking in iOS -->
+  <title>Subject Line (for proofing, doesn't show in actual email)</title>
+  <style type="text/css">
+
+/* Force Hotmail to display emails at full width */
+.ReadMsgBody {
+width: 100%;
+background-color: #eeeeee;
+}
+
+/* Force Hotmail to display emails at full width */
+.ExternalClass {
+width: 100%;
+background-color: #eeeeee;
+}
+
+/* Forces Hotmail to display normal line spacing. */
+.ExternalClass,
+.ExternalClass p,
+.ExternalClass span,
+.ExternalClass font,
+.ExternalClass td,
+.ExternalClass div {
+line-height:100%;
+}
+
+/* Resolves webkit padding issue. */
+table {
+border-spacing:0;
+}
+
+/* Resolves the Outlook 2007, 2010, and Gmail td padding issue. */
+table td {
+border-collapse:collapse;
+}
+
+/* Yahoo auto-sensing link color and border */
+.yshortcuts a {
+border-bottom: none !important;
+}
+
+/* Start of template styling */
+img {height: auto; max-width: 100%;}
+a img {border: none;}
+a {color: #0190de; text-decoration:none; font-weight: bold;}
+a:hover {text-decoration: underline;}
+
+h1 {
+    font-family: 'Helvetica Neue', 'Arial', sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+    color: #595959;
+    margin: 0 0 0 0;
+    line-height: 1.21;
+}
+
+h2 {
+    font-family: 'Helvetica Neue', 'Arial', sans-serif;
+    color: #595959;
+    font-size: 1.5em;
+    font-weight: bold;
+    line-height: 1.33;
+    margin: 0 0 0 0;
+    
+}
+
+.body-copy{
+    font-size: 1em;
+}
+
+.btn-primary {
+    display: inline-block;
+    background-color: #0190de;
+    border-color: #0081c7;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 3px 3px 3px 3px;
+    padding: 12px 10px 12px 10px;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-family: 'Helvetica Neue', 'Arial', sans-serif;
+}
+
+table[class="btn-primary"] {
+    padding: 0;
+}
+
+.email-wrapper{
+    width: 100%;
+    max-width: 600px;
+}
+
+.content-padding{
+    padding: 24px 36px 24px 36px;
+}
+
+.sliding-apps{
+    background-image: url('http://i.imgur.com/K5bJszO.gif');
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+/* End of template styling */
+
+/* Apple Mail doesn't support max-width, so we use media queries to constrain the email width. */
+@media only screen and (min-width: 601px) {
+.email-wrapper {
+width: 600px !important;
+}
+}
+  
+/* Media query targeting tablets and phones */
+@media only screen and (max-width: 600px) {
+    .content-padding{
+        padding: 12px 18px 12px 18px !important;
+    }
+    
+    h1{font-size: 1.625em;}
+    h2{font-size: 1.5em;}
+}
+  </style>
+  </head>
+  <body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" style="margin:0; padding:0;-webkit-text-size-adjust:none; -ms-text-size-adjust:none;background: #e8e8e8;">
+    <!--      Outer container table in case body tag is stripped -->
+    <table cellspacing="0" cellpadding="0" border="0" width="100%" height="100%" bgcolor="#e8e8e8" style="background-color: #e8e8e8; font-size:14px;" >
+    <tr>
+        <td valign="top">
+        <!-- Outlook and Lotus Notes don't support max-width but are always on desktop, so we can enforce a wide, fixed width view. -->
+        <!-- Beginning of Outlook-specific wrapper : BEGIN -->
+        <!--[if (gte mso 9)|(IE)]>
+        <table width="600" align="center" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+        <td>
+        <![endif]-->
+        <!-- Beginning of Outlook-specific wrapper : END -->
+
+        <!--    Email wrapper : BEGIN    -->
+        <table cellspacing="0" cellpadding="0" border="0" width="100%" align="center" style="margin: auto; font-size: 14px;" class="email-wrapper">
+            <!-- Comment out pre-header
+            <!-- Preheader section, summary left, view in browser right : BEGIN
+            <tr>
+                <td style="padding: 0 6px 0 6px;">
+                    
+                    <table cellspacing="0" cellpadding="0" border="0" width="100%" height="36">
+                        <tr>
+                            <td height="24" align="left" style="font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-size: 0.78em; color: #999999;">
+                                Achievement unlocked: This is an example of a long preheader text
+                            </td>
+                            <td align="right">
+                                <a href="#" target="_blank" style="font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; font-size: 0.6875em; color: #999999; text-decoration: underline;">View email in browser</a>
+                            </td>
+                        </tr>                        
+                    </table>                    
+                </td>
+            </tr>
+            <!-- Preheader section : END -->
+            
+            <!-- Header section : BEGIN -->
+            <tr>
+                <td class="content-padding" bgcolor="#0190de">
+                    <table cellspacing="0" cellpadding="" border="0" width="100%" bgcolor="#0190de" height="48">
+                       <tr>
+                           <!-- Hoiio Logo -->
+                           <td align="left">
+                               <a href="#" target="_blank">
+                                   <img src="http://content.hoiio.com/uploads/9/4/3/5/9435489/998680.png" alt="hoiio-logo">
+                               </a>
+                           </td>
+                           
+                           <!-- Facebook like and Twitter icon, width of 96 for 2 icons -->
+                           <td width="48" align="center">
+                               <a href="#" target="_blank">
+                                   <img src="http://i.imgur.com/swD58xO.png" alt="like us on facebook">
+                               </a>
+                           </td>
+                           <td width="48" align="center">
+                               <a href="#" target="_blank">
+                                   <img src="http://i.imgur.com/Y2QpCm7.png" alt="follow us on twitter">
+                               </a>
+                           </td>
+                       </tr> 
+                    </table>
+                </td>
+            </tr>
+            <!-- Header section : END -->
+            
+            <!-- Body section : BEGIN -->
+            <tr>
+                <td bgcolor="#FFFFFF" class="content-padding body-copy" style="font-family: 'Helvetica Neue', 'Arial', sans-serif; mso-line-height-rule: exactly; line-height: 24px; line-height: 1.7143; color: #595959;">
+                    {{ content }}
+                </td>
+            </tr>
+            <!-- Body section : END -->
+            
+            <!-- Footer section : BEGIN -->
+            <tr>
+                <td class="content-padding" align="center" bgcolor="#FFFFFF" style="border-top: 1px solid #e8e8e8;">
+                    <span style="color: #999999; font-size: 11px; font-size: 0.78em !important; font-family: 'Helvetica Neue', 'Arial', sans-serif; mso-line-height-rule: exactly; line-height: 18px; line-height: 1.61; width:100%;"><em>Copyright © 2014 Hoiio, All rights reserved.</em>
+                    <br>You are receiving this email because you subscribed to one or more Hoiio services.
+                    <br><br>
+                    <strong>Our mailing address is:</strong><br>
+                    Hoiio<br>
+                    240 Macpherson Road<br>
+                    #07-05 Pines Industrial Building<br>
+                    Singapore 348574</span><br>
+                </td>
+            </tr>
+            <!-- Footer section : END -->
+        </table>
+        </td>
+        </tr>
+    </table>
+  </body>
+</html>

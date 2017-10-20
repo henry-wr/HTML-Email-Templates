@@ -1,0 +1,68 @@
+<!DOCTYPE>
+<HTML>
+    <head>
+        <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        html, body{
+            width: 100%;
+            height: 100%;
+        }
+        #line{
+            font-family: 'Pacifico', cursive;
+            color: white;
+            opacity: 0.9;
+            font-size: 5em;
+            vertical-align: middle;
+        }
+        
+        #container{
+            width:100%;
+            min-height: 100%;
+            text-align: center;
+            padding-top: 100px;
+            box-sizing: border-box;
+        }
+    </style>
+    </head>
+    <body>
+        <div id="container">
+            <H1 id="line">Hello world</H1>
+        </div>
+        <script type="text/javascript">
+            function randomColor(){
+                var clrOptions = ['#334D5C', '#45B29D', 'EFC94C', '#E27A3F', '#DF5A49'];
+                var bgColor = clrOptions[Math.floor(Math.random() * clrOptions.length)];
+                document.body.style.backgroundColor = bgColor;
+            }
+            
+            window.onload = randomColor();
+        </script>
+        <script type="text/javascript">
+            var siblings = ['Henni', 'Henry', 'Rizky', 'Cici', 'Putri', 'Uti', 'Dewi', 'Putu'];
+            var sibLastName = ['Triyuniati', 'Rudyono', 'Adriyani', 'Adriyani', 'Desyani', 'Desyani', 'Hendrayani', 'Krisma'];
+            
+            function getName(){
+                   var visitorName = prompt("Please enter your name");
+                   
+                   if(visitorName != null){
+                       
+                       while(var i=0; i<siblings.length; i++){
+                           if(visitorName == siblings[i]){
+                               document.getElementById('line').innerHTML = "Hello " + visitorName + " Wahyu " + sibLastName[i];
+                               i = siblings.length;
+                           }
+                           else{
+                       document.getElementById('line').innerHTML = "Hello, " + visitorName;
+                           }
+                       }
+                   }
+            };
+            
+            window.onload = getName();
+        </script>
+    </body>
+</HTML>

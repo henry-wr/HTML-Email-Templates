@@ -1,0 +1,357 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- So that mobile webkit will display zoomed in -->
+  <meta name="format-detection" content="telephone=no"> <!-- disable auto telephone linking in iOS -->
+  <title>Subject Line (for proofing, doesn't show in actual email)</title>
+  <style type="text/css">
+
+/* Force Hotmail to display emails at full width */
+.ReadMsgBody {
+width: 100%;
+background-color: #eeeeee;
+}
+
+/* Force Hotmail to display emails at full width */
+.ExternalClass {
+width: 100%;
+background-color: #eeeeee;
+}
+
+/* Forces Hotmail to display normal line spacing. */
+.ExternalClass,
+.ExternalClass p,
+.ExternalClass span,
+.ExternalClass font,
+.ExternalClass td,
+.ExternalClass div {
+line-height:100%;
+}
+
+/* Resolves webkit padding issue. */
+table {
+border-spacing:0;
+}
+
+/* Resolves the Outlook 2007, 2010, and Gmail td padding issue. */
+table td {
+border-collapse:collapse;
+}
+
+/* Yahoo auto-sensing link color and border */
+.yshortcuts a {
+border-bottom: none !important;
+}
+
+/* Start of template styling */
+img {height: auto;}
+a img {border: none;}
+a {color: #0190de; text-decoration:none; font-weight: bold;}
+a:hover {text-decoration: underline;}
+
+/**
+* @tab Page
+* @section Heading 1
+* @tip Set the styling for all first-level headings in your emails. These should be the largest of your headings.
+* @style heading 1
+*/
+h1 {
+    /*@editable*/font-family: 'Helvetica Neue', 'Arial', sans-serif;
+    /*@editable*/font-size: 28px;
+    /*@editable*/font-weight: bold;
+    /*@editable*/color: #595959;
+    /*@editable*/text-align: left;
+    margin: 0 0 0 0;
+    line-height: 1.21;
+}
+
+/**
+* @tab Pre-header
+* @section Preheader Text
+* @tip Set the styling for preheader
+* @style preheader-text
+*/
+.pre-header-text{
+    /*@editable*/font-family: 'Helvetica Neue', 'Arial', sans-serif;
+    /*@editable*/font-size: 12px;
+    /*@editable*/color: #999999;
+}
+
+/**
+* @tab Pre-header
+* @section Preheader Link
+* @tip Set the styling for preheader
+* @style preheader-link
+*/
+.pre-header-text a{
+    /*@editable*/font-family: 'Helvetica Neue', 'Arial', sans-serif;
+    /*@editable*/color: #999999;
+    /*@editable*/text-decoration: underline;
+    /*@editable*/font-weight: normal;
+    /*@editable*/font-size: 12px;
+}
+
+/**
+* @tab Header
+* @section Header text
+* @tip Set the styling for label in the header-image section
+* @style header-label
+*/
+.header-label h1{
+    /*@editable*/color: #ffffff;
+    /*@editable*/font-weight: bold;
+    /*@editable*/font-size: 28px;
+    /*@editable*/text-align: left;
+}
+
+.header-image{
+    /*@editable*/display: table-cell;
+}
+
+/**
+* @tab Page
+* @section Heading 2
+* @tip Set the styling for all second-level headings in your emails. These should be the largest of your headings.
+* @style heading 2
+*/
+h2 {
+    /*@editable*/font-family: 'Helvetica Neue', 'Arial', sans-serif;
+    /*@editable*/color: #595959;
+    /*@editable*/font-size: 22px;
+    /*@editable*/font-weight: bold;
+    line-height: 1.33;
+    margin: 0 0 0 0;
+    
+}
+
+/**
+* @tab Body
+* @section Body text
+* @tip Set the styling for body copy
+* @style body text
+*/
+.body-copy{
+    /*@editable*/font-family: 'Helvetica Neue', 'Arial', sans-serif;
+    /*@editable*/font-size: 14px;
+    /*@editable*/color: #595959;
+    line-height: 22px;
+    mso-line-height-rule: exactly;
+}
+
+/**
+* @tab Footer
+* @section Footer Text
+* @tip Set the styling for preheader
+* @style footer-text
+*/
+.footer-text{
+    font-family: 'Helvetica Neue', 'Arial', sans-serif;
+    color: #999999;
+    font-size: 11px;
+}
+
+/**
+* @tab Body
+* @section Button
+* @tip Set the styling for CTA button
+* @style body text
+*/
+.btn-primary {
+    display: inline-block;
+    /*@editable*/background-color: #0190de;
+    /*@editable*/border-color: #0081c7;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 3px 3px 3px 3px;
+    padding: 12px 10px 12px 10px;
+    text-decoration: none;
+    /*@editable*/color: #FFFFFF;
+    font-size: 14px;
+    /*@editable*/font-family: 'Helvetica Neue', 'Arial', sans-serif;
+}
+
+table[class="btn-primary"] {
+    padding: 0;
+}
+
+.email-wrapper{
+    width: 100%;
+    max-width: 600px;
+}
+
+.content-padding{
+    padding: 24px 36px 24px 36px;
+}
+
+/* End of template styling */
+
+/* Apple Mail doesn't support max-width, so we use media queries to constrain the email width. */
+@media only screen and (min-width: 601px) {
+.email-wrapper {
+width: 600px !important;
+}
+}
+  
+/* Media query targeting tablets and phones */
+@media only screen and (max-width: 600px) {
+    .content-padding{
+        padding: 12px 18px 12px 18px !important;
+    }
+    
+    .body-copy{font-size: 1.14em;}
+    h1{font-size: 1.625em;}
+    h2{font-size: 1.5em;}
+}
+  </style>
+  </head>
+  <body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" style="margin:0; padding:0;-webkit-text-size-adjust:none; -ms-text-size-adjust:none;background: #e8e8e8;">
+    <!--      Outer container table in case body tag is stripped -->
+    <table cellspacing="0" cellpadding="0" border="0" width="100%" height="100%" bgcolor="#e8e8e8" style="background-color: #e8e8e8; font-size:14px;" >
+    <tr>
+        <td valign="top">
+        <!-- Outlook and Lotus Notes don't support max-width but are always on desktop, so we can enforce a wide, fixed width view. -->
+        <!-- Beginning of Outlook-specific wrapper : BEGIN -->
+        <!--[if (gte mso 9)|(IE)]>
+        <table width="600" align="center" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+        <td>
+        <![endif]-->
+        <!-- Beginning of Outlook-specific wrapper : END -->
+
+        <!--    Email wrapper : BEGIN    -->
+        <table cellspacing="0" cellpadding="0" border="0" width="100%" align="center" style="margin: auto; font-size: 14px;" class="email-wrapper">
+            <!-- Preheader section, summary left, view in browser right : BEGIN -->
+            <tr>
+                <td style="padding: 0 6px 0 6px;">
+                    
+                    <table cellspacing="0" cellpadding="0" border="0" width="100%" height="36">
+                        <tr>
+                            <td mc:edit="pre-header" class="pre-header-text" height="24" align="left">
+                                Achievement unlocked: This is an example of a long preheader text
+                            </td>
+                            <td align="right" class="pre-header-text">
+                                <a href="*|ARCHIVE|*" target="_blank">View email in browser</a>
+                            </td>
+                        </tr>                        
+                    </table>                    
+                </td>
+            </tr>
+            <!-- Preheader section : END -->
+            
+            <!-- Header section : BEGIN -->
+            <tr>
+                <td style="padding: 12px 36px 18px 36px;" bgcolor="#0190de">
+                    <table cellspacing="0" cellpadding="" border="0" width="100%" bgcolor="#0190de" height="48">
+                       <tr>
+                           <!-- Hoiio Logo -->
+                           <td align="left">
+                               <a href="#" target="_blank">
+                                   <img src="http://content.hoiio.com/uploads/9/4/3/5/9435489/998680.png" alt="hoiio-logo">
+                               </a>
+                           </td>
+                       </tr> 
+                    </table>
+                </td>
+                
+            </tr>
+            <!-- Header section : END -->
+            
+            <!-- Header image section : BEGIN -->
+            <tr>
+                <td class="header-image content-padding" width="100%" bgcolor="#0190de" align="center">
+                    <table width="250" align="left" border="0" cellspacing="0" cellpadding="0" style="margin: auto;">
+                        <tr>
+                            <td height="165">
+                                <img mc:edit="header-image" src="http://i.imgur.com/wJjYoOl.png" alt="Welcome to Hoiio" style="max-width: 100%; height: auto;">
+                            </td>
+                        </tr>                        
+                    </table>
+                    <table class="col253" align="left" border="0" cellspacing="0" cellpadding="10" style="width:100%; max-width: 253px;">
+                        <tr>                            
+                            <td height="145" class="header-label" align="center">
+                                <h1 style="text-align: center;" mc:edit="header-label" >Business lines @ $10/mth</h1>
+                            </td>
+                        </tr>
+                    </table>
+                    
+                </td>
+            </tr>
+            <!-- Header image section : END -->
+            
+            <!-- Body section : BEGIN -->
+            <tr>
+                <td mc:edit="main" bgcolor="#FFFFFF" class="content-padding body-copy">
+                    <h1>Dear *|FNAME|*</h1>
+                    <br>
+                    <h2>This is header 2</h2><br>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, a, recusandae excepturi quia distinctio provident nisi placeat nihil id ut mollitia animi perferendis at itaque soluta dicta eveniet deleniti velit.
+                    <br><br>
+                    <table align="center" border="0" cellpadding="0" cellspacing="0" >
+    <tr>
+        <td class="btn-primary" align="center" valign="middle">
+            <a href="http://www.mailchimp.com/blog/" target="_blank" style="color:#FFFFFF; text-decoration:none;">Read More Stories On Our Blog</a>
+        </td>
+    </tr>
+</table>
+                </td>
+            </tr>
+            <!-- Body section : END -->
+            
+            <!-- Social link section : BEGIN -->
+            <tr>
+                <td class="content-padding" bgcolor="#FFFFFF" style="border-top: 1px solid #e8e8e8;">
+                    <table border="0" cellpadding="0" cellspacing="0" width="100%" align="center">
+                        <tr>
+                            <td align="right">
+                                <a href="*|FACEBOOK:PROFILEURL|*" target="_blank">
+                                    <img width="24" src="https://s3.amazonaws.com/email-template.hoiio.com/icn-svg-fb.png" alt="Like us on facebook">
+                                </a>                                
+                            </td>
+                            <td align="center">
+                                <a href="*|TWITTER:PROFILEURL|*" target="_blank">
+                                    <img width="24" src="https://s3.amazonaws.com/email-template.hoiio.com/icn-svg-twitter.png" alt="Like us on facebook">
+                                </a> 
+                            </td>
+                            <td align="left">
+                                <a href="http://blog.hoiio.com" target="_blank">
+                                    <img width="24" src="https://s3.amazonaws.com/email-template.hoiio.com/icn-svg-rss.png" alt="facebook">
+                                </a>                                
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <!-- Social link section : END -->
+            
+            <!-- Footer section : BEGIN -->
+            <tr>
+                <td align="center">
+                    <table width="300" border="0" cellspacing="0" cellpadding="20" align="left">
+                        <tr>
+                            <td mc:edit="footer-disclaimer" class="footer-text" align="center">
+                                <em>Copyright © *|CURRENT_YEAR|* *|LIST:COMPANY|*, All rights reserved.</em>
+                                <br><br>
+                                *|LIST:DESCRIPTION|* <br>
+                                <a href="*|UNSUB|*">Unsubscribe from this list</a><br>
+                                <a href="*|REWARDS_TEXT|*">Email marketing powered by Mailchimp</a>
+                            </td>
+                        </tr>
+                    </table>
+                    <table width="300" border="0" cellspacing="0" cellpadding="20" align="left">
+                        <tr>
+                            <td mc:edit="footer-address" class="footer-text" align="center">
+                                <strong>Our mailing address is:</strong><br>
+                                *|HTML:LIST_ADDRESS_HTML|*
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <!-- Footer section : END -->
+        </table>
+        </td>
+        </tr>
+    </table>
+  </body>
+</html>
